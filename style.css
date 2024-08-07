@@ -37,7 +37,7 @@ button {
 
 @media only screen and (max-width: 480px) {
     center {
-        width: 98%;
+        width: 95%;
         box-sizing: border-box;
         padding: 0px;
         margin: 0px;
