@@ -37,9 +37,9 @@ button {
 
 @media only screen and (max-width: 480px) {
     center {
-        width: 95%;
+        width: 100%;
         box-sizing: border-box;
-        padding: 20px;
+        padding: 0px;
         margin: 0px;
         transform: none;
     }
