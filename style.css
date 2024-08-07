@@ -39,7 +39,7 @@ button {
     center {
         width: 95%;
         box-sizing: border-box;
-        padding: 0px;
+        padding: 20px;
         margin: 0px;
         transform: none;
     }
