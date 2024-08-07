@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <div class="container">
+            <h1>FORM VALIDATION</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, veniam?</p>
+            <br>
+            <form>
+                <div class="label-holder">
+                    <label>First Name</label>
+                    <p>(8-15 Characters)</p>
+                </div>
+                <div class="input-icon-container">
+                    <input placeholder="Enter First Name..." minlength="4" maxlength="15" required id="fname" pattern="[A-Za-z]+" title="First name should only contain alphabets with no spaces.">
+                </div>
+
+                <div class="label-holder">
+                    <label>Last Name</label>
+                    <p>(8-15 Characters)</p>
+                </div>
+                <div class="input-icon-container">
+                    <input placeholder="Enter Last Name..." minlength="4" maxlength="15" required id="lname" pattern="[A-Za-z]+" title="Last name should only contain alphabets with no spaces.">
+                </div>
+
+                <div class="label-holder">
+                    <label>Email Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="input-icon-container">
+                    <input type="email" placeholder="Enter your Email Id..." required>
+                </div>
+
+                <div class="label-holder">
+                    <label>Mobile Number</label>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="input-icon-container">
+                    <input type="tel" placeholder="Enter your Mobile Number..." pattern="[0-9]{10}" title="Mobile number should be 10 digits without spaces." required>
+                </div>
+
+                <div class="label-holder">
+                    <label>Social-Media Followers</label>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="input-icon-container">
+                    <input type="number" placeholder="Choose Followers count in 100s..." min="100" max="2000" step="100">
+                </div>
+
+                <div class="label-holder">
+                    <label>Communication Skill</label>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="input-icon-container">
+                    <input type="range" min="0">
+                </div>
+
+                <div class="label-holder">
+                    <label>Date of Birth</label>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="input-icon-container">
+                    <input type="date" min="2002-01-01" max="2006-12-01" required>
+                </div>
+
+                <div class="label-holder">
+                    <label>Month of Joining</label>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="input-icon-container">
+                    <input type="month" min="2024-02" max="2024-06" required>
+                </div>
+
+                <div class="label-holder">
+                    <label>Week of Joining</label>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="input-icon-container">
+                    <input type="week" min="2024-W05" max="2024-W24" required>
+                </div>
+
+                <div class="label-holder">
+                    <label>Preferred Time for Lunch</label>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="input-icon-container">
+                    <input type="time" min="08:00" max="10:00" required>
+                </div>
+
+                <div class="label-holder">
+                    <label>Favourite Color</label>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="input-icon-container">
+                    <input type="color" required>
+                </div>
+                
+                <div class="cab">
+                    <input type="checkbox">
+                    <p>Avail Cab Facility</p>
+                </div>
+
+                <div class="label-holder">
+                    <label>Gender</label>
+                </div>
+                <div class="input-icon-container radio-container">
+                    <div>
+                        <input type="radio" id="gender-male" name="gender" value="male" required>
+                        <label for="gender-male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="gender-female" name="gender" value="female" required>
+                        <label for="gender-female">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="gender-other" name="gender" value="other" required>
+                        <label for="gender-other">Others</label>
+                    </div>
+                </div>
+
+                <div class="label-holder">
+                    <label>Skillset</label>
+                    <p></p>
+                    <p></p>
+                </div>
+                <select required>
+                    <option>Java</option>
+                    <option>C++</option>
+                    <option>Python</option>
+                    <option>Javascript</option>
+                    <option>C</option>
+                </select><br><br>
+
+                <div class="label-holder">
+                    <label for="browsers">Nationality</label>
+                </div>
+                <div class="input-icon-container">
+                    <input list="Countries" id="browser" name="browser" placeholder="Select Nation...">
+                </div>
+                
+                <datalist id="Countries">
+                    <option value="India">
+                    <option value="U.S.A">
+                    <option value="Sri Lanka">
+                    <option value="Canada">
+                    <option value="Germany">
+                </datalist>
+
+                <div class="label-holder">
+                    <label>Set Password</label>
+                    <p>(8-15 Characters)</p>
+                </div>
+                <div class="input-icon-container">
+                    <input type="password" id="password" placeholder="Set your Password..." minlength="8" maxlength="12" required>
+                </div>
+                
+                <div class="label-holder">
+                    <label>Confirm Password</label>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="input-icon-container">
+                    <input type="password" id="confirm_password" placeholder="Confirm your Password..." required>
+                </div>
+                <br>
+
+                <div class="label-holder">
+                    <label>Feedback</label>
+                    <p>(10-50 Characters)</p>
+                </div>
+                <div class="input-icon-container">
+                    <textarea placeholder="Share your Feedback..." rows="5" minlength="10" maxlength="50" required></textarea>
+                </div>
+
+                <div class="label-holder">
+                    <label>Attachments</label>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="file-drop">
+                    <input type="file" accept=".doc,.docx,.xls,.xlsx,.pdf,.jpeg,.jpg,.png" multiple required>
+                </div>
+                <p class="file-acceptance">Word, Excel, PDF, JPEG & PNG are accepted.</p>
+                <p class="file-acceptance">File size should be within 10mb</p>
+                <br>
+                <button>SIGN UP</button>
+            </form>
+        </div>        
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>
